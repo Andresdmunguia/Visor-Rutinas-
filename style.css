@@ -101,4 +101,9 @@ body {
   margin-left: auto;
   font-weight: bold;
 }
+a.combo {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
