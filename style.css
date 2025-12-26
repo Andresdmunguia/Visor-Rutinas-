@@ -1,0 +1,104 @@
+/* RESET */
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR */
+.container {
+  padding: 30px 20px;
+  color: white;
+}
+
+/* ENCABEZADO */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.type {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* TITULOS */
+.block-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 35px 0 10px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+/* CAJAS */
+.box {
+  margin: 10px auto 25px;
+  max-width: 900px;
+}
+
+.blue {
+  background: #0b1cff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.box-content {
+  background: white;
+  color: black;
+}
+
+/* FILAS NORMALES */
+.row {
+  padding: 6px 12px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+/* FILAS CON SPEED / POWER */
+.row.sp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+/* COMBINACIÓN (CENTRO REAL) */
+.row.sp span:first-child {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* S / P (EXTREMO DERECHO) */
+.row.sp .tag {
+  margin-left: auto;
+  font-weight: bold;
+}
+
