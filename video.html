@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Video</title>
+  <title>Video ejercicio</title>
   <style>
     body {
       margin: 0;
@@ -22,9 +22,17 @@
 <body>
 
   <video controls autoplay>
-    <source src="videos/boxing-1-2.mp4" type="video/mp4">
+    <source src="" id="videoSource" type="video/mp4">
     Tu navegador no soporta video.
   </video>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const video = params.get("v");
+    if (video) {
+      document.getElementById("videoSource").src = "videos/" + video;
+    }
+  </script>
 
 </body>
 </html>
